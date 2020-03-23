@@ -32,6 +32,26 @@ p span{
   width: 22rem;
 }
 
+.age {
+  background-color: #1c2945;
+  width: 42rem;
+}
+
+.gender {
+  background-color: #1c2945;
+  width: 42rem;
+}
+
+.martial{
+  background-color: #1c2945;
+  width: 42rem;
+}
+
+.com {
+  background-color: #1c2945;
+  width: 42rem;
+}
+
 p {
   color: ghostwhite;
   font-size: 1rem;

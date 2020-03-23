@@ -66,18 +66,80 @@
             </div>
           </div>
 
-          <!-- Gender and Age-->
-          <div class="gender ml-3">
-            <p class="ml-4 mt-3"><span>Gender</span></p>
-          </div>
-          <div class="gender ml-3">
-            <p class="ml-4 mt-3"><span>Age distribution</span></p>
+          <div class="d-flex justify-content-center mt-3">
+              <div class="age">
+                  <p class="ml-4 mt-3"><span>Age distribution</span></p>
+                  <div class="d-flex justify-content-between">
+                      <p class="ml-5 pl-1">0-10:</p>
+                      <p class="mr-5 pr-1">{{ age010 }}</p>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                      <p class="ml-5 pl-1">10-20:</p>
+                      <p class="mr-5 pr-1">{{ age1020 }}</p>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                      <p class="ml-5 pl-1">20-30:</p>
+                      <p class="mr-5 pr-1">{{ age2030 }}</p>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                      <p class="ml-5 pl-1">30-40:</p>
+                      <p class="mr-5 pr-1">{{ age3040 }}</p>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                      <p class="ml-5 pl-1">40-50:</p>
+                      <p class="mr-5 pr-1">{{ age4050 }}</p>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                      <p class="ml-5 pl-1">50-60:</p>
+                      <p class="mr-5 pr-1">{{ age5060 }}</p>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                      <p class="ml-5 pl-1">60-70:</p>
+                      <p class="mr-5 pr-1">{{ age6070 }}</p>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                      <p class="ml-5 pl-1">70-120:</p>
+                      <p class="mr-5 pr-1">{{ age70120 }}</p>
+                  </div>
+              </div>
+              <div class="ml-3">
+                  <div class="gender mb-3">
+                    <p class="ml-4"><span>Gender</span></p>
+                    <div class="d-flex justify-content-between">
+                        <p class="ml-5 pl-1">male:</p>
+                        <p class="mr-5 pr-1">{{ male }}</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <p class="ml-5 pl-1">female:</p>
+                        <p class="mr-5 pr-1">{{ female }}</p>
+                    </div>
+                  </div>
+                  <div class="martial mb-3">
+                    <p class="ml-4 mt-3"><span>Marital Status</span></p>
+                    <div class="d-flex justify-content-between">
+                        <p class="ml-5 pl-1">married:</p>
+                        <p class="mr-5 pr-1">{{ married }}</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <p class="ml-5 pl-1">Never married:</p>
+                        <p class="mr-5 pr-1">{{ notmarried }}</p>
+                    </div>
+                  </div>
+                  <div class="com">
+                    <p class="ml-4 mt-3"><span>Patient Communication Languag</span></p>
+                    <div class="d-flex justify-content-between">
+                        <p class="ml-5 pl-1">English:</p>
+                        <p class="mr-5 pr-1">{{ commE }}</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <p class="ml-5 pl-1">Spanish:</p>
+                        <p class="mr-5 pr-1">{{ commS }}</p>
+                    </div>
+                  </div>
+              </div>
+
           </div>
 
-          <!-- Monthly # -->
-          <div class="gender ml-3">
-            <p class="ml-4 mt-3"><span>Marital Status Patient Communication Language</span></p>
-          </div>
 
         </div>
       </div>
