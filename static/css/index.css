@@ -1,0 +1,38 @@
+p{
+  font-family: 'Baloo 2';
+  font-weight: 600;
+}
+
+.title {
+  width: 15rem;
+  height: 4rem;
+}
+
+body {
+  background-color: #161f37;
+}
+
+.worldmap{
+  background-color: #1c2945;
+}
+
+.map {
+  width: 62rem;
+  height: 30rem;
+}
+
+p span{
+  color: ghostwhite;
+  font-size: 1.1rem;
+  border-bottom: solid 0.2rem #378a7c;
+}
+
+.numbers {
+  background-color: #1c2945;
+  width: 22rem;
+}
+
+p {
+  color: ghostwhite;
+  font-size: 1rem;
+}

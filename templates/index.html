@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>FHIRworld</title>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <!-- Fontawesome icon -->
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Baloo+2:400,500,600,700|Open+Sans:300,400,600&display=swap" rel="stylesheet">  <link href="index.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template-->
+  <link href="{{ url_for('static', filename='css/index.css') }}" rel="stylesheet">
+</head>
+
+<body id="page-top">
+
+  <!-- Page Wrapper -->
+  <div id="wrapper">
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+
+      <!-- Main Content -->
+      <div id="content">
+
+        <!-- Begin Page Content -->
+        <div class="container-fluid">
+
+          <!-- Page Heading -->
+          <div class="row mb-3 mt-3 ml-2">
+            <img src="{{ url_for('static', filename='title.png') }}" class="title">
+          </div>
+
+          <!-- World map and numbers-->
+          <div class="ml-4 d-flex justify-content-center">
+            <div class="worldmap">
+              <p class="ml-4 mt-3"><span>Country Map with Local Patient #</span></p>
+              <iframe class="map mb-3" width="100%" height="100%" frameborder="no" border="0" scrolling="no" src="{{ url_for('static', filename='html5-global-map/index.html') }}"></iframe>
+            </div>
+            <div class="ml-3 d-flex align-content-stretch flex-wrap ">
+              <div class="numbers mb-3">
+                <p class="ml-4 mt-3"><span>FHIR Version</span></p>
+                <p class="ml-5 pl-1">{{ fhir_version }}</p>
+              </div>
+              <div class="numbers mb-3">
+                <p class="ml-4 mt-3"><span>Microsoft FHIR Server Version</span></p>
+                <p class="ml-5 pl-1">{{ microsoft_fhir_server_version }}</p>
+              </div>
+              <div class="numbers mb-3">
+                <p class="ml-4 mt-3"><span>Total Patient #</span></p>
+                <p class="ml-5 pl-1">{{ patient_total_number }}</p>
+              </div>
+              <div class="numbers">
+                <p class="ml-4 mt-3"><span>Total Observation #</span></p>
+                <p class="ml-5 pl-1">{{ observation_total_number }}</p>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Gender and Age-->
+          <div class="gender ml-3">
+            <p class="ml-4 mt-3"><span>Gender</span></p>
+          </div>
+          <div class="gender ml-3">
+            <p class="ml-4 mt-3"><span>Age distribution</span></p>
+          </div>
+
+          <!-- Monthly # -->
+          <div class="gender ml-3">
+            <p class="ml-4 mt-3"><span>Marital Status Patient Communication Language</span></p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!-- End of Content Wrapper -->
+
+  </div>
+  <!-- End of Page Wrapper -->
+
+
+
+  <!-- Bootstrap core JavaScript-->
+
+
+  <!-- Core plugin JavaScript-->
+
+
+  <!-- Custom scripts for all pages-->
+
+
+  <!-- Page level plugins -->
+
+
+  <!-- Page level custom scripts -->
+
+
+</body>
+
+</html>
